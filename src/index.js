@@ -5,10 +5,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { View } from 'react-native';
-import { parser, stringToTokens } from './lib/parser';
+import { parser } from './lib/parser';
 import getUniqueID from './lib/util/getUniqueID';
 import hasParents from './lib/util/hasParents';
 import openUrl from './lib/util/openUrl';
+import { stringToTokens } from './lib/util/stringToTokens';
 import tokensToAST from './lib/util/tokensToAST';
 import renderRules from './lib/renderRules';
 import AstRenderer from './lib/AstRenderer';
